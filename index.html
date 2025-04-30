@@ -1,22 +1,86 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <title>Promoções da Semana</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Família Ótica</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
   <style>
-    body { font-family: sans-serif; padding: 20px; text-align: center; }
-    img, video { max-width: 100%; margin: 20px 0; border-radius: 10px; }
+    body { font-family: 'Poppins', sans-serif; margin: 0; padding: 0; background-color: #f9f9f9; color: #333; }
+    header { background-color: #004080; color: white; padding: 20px; text-align: center; }
+    header img { max-height: 100px; }
+    nav { background: #003366; padding: 10px; text-align: center; }
+    nav a { color: white; margin: 0 15px; text-decoration: none; font-weight: 600; }
+    section { padding: 40px 20px; max-width: 1000px; margin: auto; }
+    .banner { background: url('https://via.placeholder.com/1000x300?text=Bem+vindo+a+Fam%C3%ADlia+%C3%93tica') no-repeat center/cover; height: 300px; }
+    .section-title { font-size: 24px; margin-bottom: 20px; color: #004080; }
+    footer { background: #003366; color: white; text-align: center; padding: 20px; margin-top: 40px; }
+    .contact-info p, .footer-links a { margin: 5px 0; }
+    .footer-links a { color: #fff; text-decoration: none; margin: 0 10px; }
+    .highlight { color: #007ACC; }
   </style>
 </head>
 <body>
-  <h1>🔥 Promoções da Semana 🔥</h1>
+  <header>
+    <img src="Logo-Completo (1).png" alt="Família Ótica Logo">
+    <h1>Família Ótica</h1>
+    <p>Cuidando da sua visão com carinho e confiança</p>
+  </header>
 
-  <img src="imagens/promo1.jpg" alt="Promoção 1">
-  <img src="imagens/promo2.jpg" alt="Promoção 2">
+  <nav>
+    <a href="#sobre">Sobre</a>
+    <a href="#cuidados">Cuidados Visuais</a>
+    <a href="#lentes">Lentes e Tratamentos</a>
+    <a href="#promocoes">Promoções</a>
+    <a href="#contato">Contato</a>
+  </nav>
 
-  <video controls>
-    <source src="videos/promo.mp4" type="video/mp4">
-    Seu navegador não suporta vídeos.
-  </video>
+  <div class="banner"></div>
+
+  <section id="sobre">
+    <h2 class="section-title">Sobre a Família Ótica</h2>
+    <p>Localizada na Avenida Santiago Rodilha, 715 – Veloso – Osasco – SP, a Família Ótica oferece atendimento humanizado e especializado em cuidados com a visão. Trabalhamos com produtos de alta qualidade, tecnologia de ponta e um time que se dedica a cuidar da sua saúde visual como se fosse da própria família.</p>
+  </section>
+
+  <section id="cuidados">
+    <h2 class="section-title">Cuidados com a Visão</h2>
+    <ul>
+      <li>Como escolher o óculos ideal</li>
+      <li>Diferença entre lentes antirreflexo, fotossensíveis e multifocais</li>
+      <li>Quando trocar seus óculos</li>
+      <li>Sintomas que indicam problemas visuais</li>
+    </ul>
+  </section>
+
+  <section id="lentes">
+    <h2 class="section-title">Lentes e Tratamentos</h2>
+    <p>Oferecemos uma variedade de lentes: visão simples, multifocal, descanso para computador e muito mais. Nossos tratamentos incluem antirreflexo, proteção UV, filtro azul e antirrisco.</p>
+  </section>
+
+  <section id="promocoes">
+    <h2 class="section-title">Promoções</h2>
+    <p>Confira nossas promoções em óculos completos, armações e lentes de alta qualidade. Em breve adicionaremos imagens e vídeos aqui.</p>
+    <p><strong>Pagamento fácil:</strong> Aceitamos Pix! (QR Code será adicionado)</p>
+  </section>
+
+  <section id="contato">
+    <h2 class="section-title">Fale Conosco</h2>
+    <div class="contact-info">
+      <p><strong>Endereço:</strong> Av. Santiago Rodilha, 715 – Veloso – Osasco – SP – CEP 06154-000</p>
+      <p><strong>WhatsApp:</strong> (xx) xxxxx-xxxx</p>
+      <p><strong>Email:</strong> contato@familiaoticass.com.br</p>
+      <p><strong>Instagram:</strong> @familiaotica</p>
+      <p><strong>Horário:</strong> Segunda a Sábado, das 9h às 18h</p>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-links">
+      <a href="#">Início</a> |
+      <a href="#contato">Contato</a> |
+      <a href="#promocoes">Promoções</a>
+    </div>
+    <p>&copy; 2025 Família Ótica. Todos os direitos reservados.</p>
+  </footer>
 </body>
 </html>
