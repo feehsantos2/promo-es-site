@@ -44,11 +44,71 @@
       padding: 40px 20px;
       max-width: 1200px;
       margin: auto;
-      text-align: center;
+    }
+
+    .carousel-video-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .carousel {
+      position: relative;
+      width: 100%;
+      max-width: 500px;
+      overflow: hidden;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+    }
+
+    .carousel-images {
+      display: flex;
+      transition: transform 0.5s ease-in-out;
+    }
+
+    .carousel-images img {
+      width: 100%;
+      flex-shrink: 0;
+    }
+
+    .carousel button {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background-color: rgba(0,0,0,0.5);
+      color: white;
+      border: none;
+      font-size: 24px;
+      padding: 10px;
+      cursor: pointer;
+      opacity: 0;
+      transition: opacity 0.3s;
+    }
+
+    .carousel:hover button {
+      opacity: 1;
+    }
+
+    .prev {
+      left: 10px;
+    }
+
+    .next {
+      right: 10px;
+    }
+
+    video {
+      width: 100%;
+      max-width: 500px;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.15);
     }
 
     .welcome {
-      margin-bottom: 50px;
+      text-align: center;
+      margin-bottom: 40px;
     }
 
     .welcome h2 {
@@ -60,80 +120,6 @@
       font-size: 18px;
       color: #333;
       margin-top: 10px;
-    }
-
-    .btn {
-      display: inline-block;
-      margin-top: 25px;
-      padding: 12px 30px;
-      font-size: 16px;
-      color: #ff6600;
-      background-color: #fff;
-      border: 2px solid #ff6600;
-      border-radius: 30px;
-      text-decoration: none;
-      transition: all 0.3s ease;
-    }
-
-    .btn:hover {
-      background-color: #ff6600;
-      color: #fff;
-    }
-
-    .carousel-container {
-      max-width: 700px;
-      height: 300px;
-      margin: 40px auto;
-      position: relative;
-      overflow: hidden;
-      border-radius: 12px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-      background: #fff;
-    }
-
-    .carousel-images {
-      display: flex;
-      transition: transform 0.5s ease-in-out;
-    }
-
-    .carousel-images img {
-      width: 700px;
-      height: 300px;
-      object-fit: contain;
-      flex-shrink: 0;
-      border: none; /* remove qualquer moldura */
-      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* sombra suave */
-    }
-
-    .carousel-button {
-      position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
-      background-color: rgba(255, 255, 255, 0.85);
-      border: none;
-      padding: 10px;
-      cursor: pointer;
-      border-radius: 50%;
-      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
-      display: none;
-      transition: background-color 0.3s ease;
-    }
-
-    .carousel-button:hover {
-      background-color: #ff6600;
-      color: white;
-    }
-
-    .carousel-container:hover .carousel-button {
-      display: block;
-    }
-
-    .carousel-button.prev {
-      left: 10px;
-    }
-
-    .carousel-button.next {
-      right: 10px;
     }
 
     footer {
@@ -168,25 +154,28 @@
   </nav>
 
   <section class="welcome">
-    <h2>Bem-vindo à Família Ótica 👓</h2>
-    <p>
-      Enxergar bem é viver melhor! <br/>
-      Aqui na Família Ótica, unimos atendimento humano, tecnologia de ponta e tradição para cuidar da sua visão com excelência.
-    </p>
-    <a href="promocoes.html" class="btn">Ver Promoções</a>
+    <h2>Bem-vindo à Família Ótica</h2>
+    <p>Veja o mundo com mais nitidez, estilo e conforto.</p>
   </section>
 
-  <section class="carousel-container">
-    <div class="carousel-images" id="carouselImages">
-      <img src="img/Imagem1.jpg" alt="Imagem 1" />
-      <img src="img/Imagem2.jpg" alt="Imagem 2" />
-      <img src="img/Imagem3.jpg" alt="Imagem 3" />
-      <img src="img/Imagem4.jpg" alt="Imagem 4" />
-      <img src="img/Imagem5.jpg" alt="Imagem 5" />
-      <img src="img/Imagem6.jpg" alt="Imagem 6" />
+  <section class="carousel-video-container">
+    <div class="carousel">
+      <div class="carousel-images" id="carousel-images">
+        <img src="img/carrossel1.jpg" alt="Imagem 1" />
+        <img src="img/carrossel2.jpg" alt="Imagem 2" />
+        <img src="img/carrossel3.jpg" alt="Imagem 3" />
+        <img src="img/carrossel4.jpg" alt="Imagem 4" />
+        <img src="img/carrossel5.jpg" alt="Imagem 5" />
+        <img src="img/carrossel6.jpg" alt="Imagem 6" />
+      </div>
+      <button class="prev" onclick="prevSlide()">❮</button>
+      <button class="next" onclick="nextSlide()">❯</button>
     </div>
-    <button class="carousel-button prev" onclick="prevSlide()">&#10094;</button>
-    <button class="carousel-button next" onclick="nextSlide()">&#10095;</button>
+
+    <video autoplay loop controls playsinline>
+      <source src="videos/promocao.mp4" type="video/mp4">
+      Seu navegador não suporta vídeo.
+    </video>
   </section>
 
   <footer>
@@ -199,25 +188,26 @@
   </footer>
 
   <script>
-    const images = document.getElementById('carouselImages');
-    const totalImages = images.children.length;
-    let currentIndex = 0;
+    let index = 0;
+    const images = document.getElementById("carousel-images");
+    const total = images.children.length;
 
-    function updateCarousel() {
-      images.style.transform = `translateX(-${currentIndex * 700}px)`;
+    function showSlide(i) {
+      index = (i + total) % total;
+      images.style.transform = `translateX(-${index * 100}%)`;
     }
 
     function nextSlide() {
-      currentIndex = (currentIndex + 1) % totalImages;
-      updateCarousel();
+      showSlide(index + 1);
     }
 
     function prevSlide() {
-      currentIndex = (currentIndex - 1 + totalImages) % totalImages;
-      updateCarousel();
+      showSlide(index - 1);
     }
 
-    setInterval(nextSlide, 5000);
+    setInterval(() => {
+      nextSlide();
+    }, 4000); // Troca automática a cada 4 segundos
   </script>
 
 </body>
