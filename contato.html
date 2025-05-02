@@ -2,26 +2,123 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Contato - Família Ótica</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
   <style>
-    body { font-family: 'Poppins', sans-serif; margin: 0; padding: 0; background-color: #fff; color: #000; }
-    header { background-color: #000; color: white; padding: 20px; text-align: center; }
-    nav { background: #ff6600; padding: 10px; text-align: center; }
-    nav a { color: white; margin: 0 15px; text-decoration: none; font-weight: 600; }
-    section { padding: 40px 20px; max-width: 800px; margin: auto; }
-    .section-title { font-size: 24px; margin-bottom: 20px; color: #ff6600; }
-    .contact-box { background: #f4f4f4; border-left: 5px solid #ff6600; padding: 20px; margin-bottom: 20px; border-radius: 8px; }
-    .contact-box p { margin: 8px 0; font-size: 16px; }
-    footer { background: #000; color: white; text-align: center; padding: 20px; margin-top: 40px; }
-    .footer-links a { color: #fff; text-decoration: none; margin: 0 10px; }
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #fff;
+      color: #000;
+    }
+
+    header {
+      background-color: #ff6600;
+      color: white;
+      padding: 30px 20px;
+    }
+
+    .header-container {
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .header-texto h1 {
+      font-size: 32px;
+      margin: 0;
+    }
+
+    .header-texto p {
+      margin-top: 5px;
+      font-size: 16px;
+      color: white;
+    }
+
+    nav {
+      background: #fff;
+      padding: 10px 0;
+      text-align: center;
+      border-bottom: 2px solid #ff6600;
+    }
+
+    nav a {
+      color: #ff6600;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 16px;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    section {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    section h2 {
+      color: #ff6600;
+      font-size: 26px;
+    }
+
+    .contato-box {
+      background: #f7f7f7;
+      border: 1px solid #ddd;
+      border-radius: 12px;
+      padding: 20px;
+      margin-bottom: 20px;
+    }
+
+    .contato-box h3 {
+      margin-top: 0;
+      font-size: 20px;
+      color: #333;
+    }
+
+    .contato-box a {
+      color: #ff6600;
+      text-decoration: none;
+      word-break: break-word;
+    }
+
+    .contato-box a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      background: #000;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+
+    .footer-links a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 10px;
+    }
+
+    .horarios {
+      margin-top: 30px;
+      font-size: 16px;
+    }
   </style>
 </head>
 <body>
+
   <header>
-    <h1>Família Ótica</h1>
-    <p class="highlight">Entre em contato conosco</p>
+    <div class="header-container">
+      <div class="header-texto">
+        <h1 style="color: white;">Família Ótica</h1>
+        <p style="color: white;">Especialistas em visão e bem-estar visual</p>
+      </div>
+    </div>
   </header>
 
   <nav>
@@ -34,24 +131,36 @@
   </nav>
 
   <section>
-    <h2 class="section-title">📞 Contato</h2>
+    <h2>Fale com a Família Ótica 💬</h2>
+    <p>Estamos prontos para te atender com carinho e atenção! Escolha o canal ideal para falar conosco:</p>
 
-    <div class="contact-box">
-      <p>📍 Endereço: Avenida Santiago Rodilha, 715 – Veloso – Osasco – SP, CEP 06154-000</p>
-      <p>📱 WhatsApp Principal: <strong>(11) 96540-1294</strong></p>
-      <p>📷 Instagram: <a href="https://instagram.com/familia_otica" target="_blank">@familia_otica</a></p>
+    <div class="contato-box">
+      <h3>💬 WhatsApp Atendimento</h3>
+      <p><a href="https://wa.me/5511965401294" target="_blank">(11) 96540-1294</a></p>
     </div>
 
-    <div class="contact-box">
-      <p>💰 <strong>Financeiro</strong></p>
-      <p>📧 Email: <a href="mailto:financeiro@familiaoticass.com.br">financeiro@familiaoticass.com.br</a></p>
-      <p>📞 WhatsApp: <strong>(11) 99696-3981</strong></p>
+    <div class="contato-box">
+      <h3>📷 Instagram</h3>
+      <p><a href="https://instagram.com/familia_otica" target="_blank">@familia_otica</a></p>
     </div>
 
-    <div class="contact-box">
-      <p>🤝 <strong>Parcerias</strong></p>
-      <p>📧 Email: <a href="mailto:campanhas@familiaoticass.com.br">campanhas@familiaoticass.com.br</a></p>
-      <p>📞 WhatsApp: <strong>(11) 91221-8334</strong></p>
+    <div class="contato-box">
+      <h3>💰 Contato Financeiro</h3>
+      <p>Email: <a href="mailto:financeiro@familiaoticass.com.br">financeiro@familiaoticass.com.br</a></p>
+      <p>WhatsApp: <a href="https://wa.me/5511996963981" target="_blank">(11) 99696-3981</a></p>
+    </div>
+
+    <div class="contato-box">
+      <h3>🤝 Parcerias</h3>
+      <p>Email: <a href="mailto:campanhas@familiaoticass.com.br">campanhas@familiaoticass.com.br</a></p>
+      <p>WhatsApp: <a href="https://wa.me/5511912218334" target="_blank">(11) 91221-8334</a></p>
+    </div>
+
+    <div class="horarios">
+      <h3>🕒 Horário de Atendimento</h3>
+      <p>Segunda a Sexta: 9h às 18h<br>
+         Sábado: 10h às 16h<br>
+         Domingo e Feriados: Confirmar horário</p>
     </div>
   </section>
 
@@ -59,9 +168,10 @@
     <div class="footer-links">
       <a href="index.html">Início</a> |
       <a href="contato.html">Contato</a> |
-      <a href="promocoes.html">Promoções</a>
+      <a href="sobre.html">Sobre</a>
     </div>
     <p>&copy; 2025 Família Ótica. Todos os direitos reservados.</p>
   </footer>
+
 </body>
 </html>
