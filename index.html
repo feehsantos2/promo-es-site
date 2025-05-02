@@ -80,12 +80,40 @@
       color: #fff;
     }
 
-    .gallery img, .gallery video {
-      max-width: 90%;
-      margin: 20px auto;
-      display: block;
-      border-radius: 10px;
+    .carousel-container {
+      max-width: 800px;
+      margin: 40px auto;
+      position: relative;
+      overflow: hidden;
       border: 2px solid #ff6600;
+      border-radius: 10px;
+    }
+
+    .carousel-images {
+      display: flex;
+      width: 600%;
+      animation: slide 18s infinite;
+    }
+
+    .carousel-images img {
+      width: 100%;
+      flex-shrink: 0;
+      object-fit: cover;
+    }
+
+    @keyframes slide {
+      0%    { transform: translateX(0%); }
+      16%   { transform: translateX(0%); }
+      17%   { transform: translateX(-100%); }
+      33%   { transform: translateX(-100%); }
+      34%   { transform: translateX(-200%); }
+      50%   { transform: translateX(-200%); }
+      51%   { transform: translateX(-300%); }
+      67%   { transform: translateX(-300%); }
+      68%   { transform: translateX(-400%); }
+      84%   { transform: translateX(-400%); }
+      85%   { transform: translateX(-500%); }
+      100%  { transform: translateX(-500%); }
     }
 
     footer {
@@ -128,13 +156,15 @@
     <a href="promocoes.html" class="btn">Ver Promoções</a>
   </section>
 
-  <section class="gallery">
-    <!-- Substitua pelas suas imagens ou vídeos -->
-    <img src="imagens/banner-loja.jpg" alt="Banner Loja" />
-    <video controls>
-      <source src="videos/video-apresentacao.mp4" type="video/mp4">
-      Seu navegador não suporta vídeo.
-    </video>
+  <section class="carousel-container">
+    <div class="carousel-images">
+      <img src="img/Imagem1.jpg" alt="Imagem 1" />
+      <img src="img/Imagem2.jpg" alt="Imagem 2" />
+      <img src="img/Imagem3.jpg" alt="Imagem 3" />
+      <img src="img/Imagem4.jpg" alt="Imagem 4" />
+      <img src="img/Imagem5.jpg" alt="Imagem 5" />
+      <img src="img/Imagem6.jpg" alt="Imagem 6" />
+    </div>
   </section>
 
   <footer>
