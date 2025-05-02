@@ -1,84 +1,78 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Promoções | Família Ótica</title>
   <style>
     body {
       margin: 0;
-      font-family: Arial, sans-serif;
+      font-family: 'Segoe UI', sans-serif;
       background-color: #fff;
-      color: #000;
+      color: #333;
     }
 
     header {
-      background-color: #ff6a00;
-      color: #fff;
-      padding: 1rem;
+      background-color: #000;
+      color: white;
+      padding: 1.5rem 1rem;
       text-align: center;
-      font-size: 1.8rem;
+      font-size: 2rem;
       font-weight: bold;
     }
 
     nav {
-      background-color: #fff;
-      padding: 0.5rem;
+      background-color: #ff6a00;
       display: flex;
       justify-content: center;
+      flex-wrap: wrap;
       gap: 1rem;
-      border-bottom: 2px solid #ff6a00;
+      padding: 1rem;
     }
 
     nav a {
-      color: #000;
+      color: white;
       text-decoration: none;
       font-weight: bold;
       padding: 0.5rem 1rem;
-      border: 2px solid #ff6a00;
-      background-color: #fff;
-      border-radius: 5px;
-      transition: background-color 0.3s ease;
+      background-color: #000;
+      border-radius: 8px;
+      transition: 0.3s;
     }
 
     nav a:hover {
-      background-color: #ff6a00;
-      color: #fff;
+      background-color: white;
+      color: #000;
+      border: 2px solid #000;
     }
 
-    .content {
+    main {
       max-width: 1000px;
-      margin: 2rem auto;
-      padding: 0 1rem;
+      margin: auto;
+      padding: 2rem 1rem;
     }
 
-    .promo-image {
-      width: 100%;
-      height: auto;
-      margin-bottom: 1.5rem;
-      border-radius: 8px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    }
-
-    .promo-video {
-      width: 100%;
-      height: auto;
+    section {
       margin-bottom: 2rem;
-      border-radius: 8px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    section img, section video {
+      width: 100%;
+      border-radius: 12px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+      margin-bottom: 1.5rem;
     }
 
     footer {
       text-align: center;
+      background-color: #000;
+      color: white;
       padding: 1rem;
-      margin-top: 2rem;
-      background-color: #ff6a00;
-      color: #fff;
+      margin-top: 3rem;
     }
   </style>
 </head>
 <body>
-
   <header>Promoções - Família Ótica</header>
 
   <nav>
@@ -90,22 +84,21 @@
     <a href="contato.html">Contato</a>
   </nav>
 
-  <div class="content">
+  <main>
+    <section>
+      <img src="img/Imagem1.jpg" alt="Atendimento personalizado">
+      <img src="img/Imagem2.jpg" alt="Exame de Vista em consultório">
+      <img src="img/Imagem3.jpg" alt="Banner da promoção Compre 1 Leve 3">
 
-    <img src="img/Imagem1.jpg" alt="Atendimento Família Ótica" class="promo-image" />
-    <img src="img/Imagem2.jpg" alt="Exame de Vista" class="promo-image" />
-    <img src="img/Imagem3.jpg" alt="Promoção leve 3" class="promo-image" />
-
-    <video class="promo-video" controls poster="img/Imagem3.jpg">
-      <source src="video/promocao.mp4" type="video/mp4">
-      Seu navegador não suporta vídeos.
-    </video>
-
-  </div>
+      <video controls poster="img/Imagem3.jpg">
+        <source src="video/promocao.mp4" type="video/mp4">
+        Seu navegador não suporta vídeos.
+      </video>
+    </section>
+  </main>
 
   <footer>
     &copy; 2025 Família Ótica - Todos os direitos reservados
   </footer>
-
 </body>
 </html>
