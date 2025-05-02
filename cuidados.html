@@ -2,24 +2,104 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Cuidados Visuais - Família Ótica</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
   <style>
-    body { font-family: 'Poppins', sans-serif; margin: 0; padding: 0; background-color: #fff; color: #000; }
-    header { background-color: #000; color: white; padding: 20px; text-align: center; }
-    nav { background: #ff6600; padding: 10px; text-align: center; }
-    nav a { color: white; margin: 0 15px; text-decoration: none; font-weight: 600; }
-    section { padding: 40px 20px; max-width: 1000px; margin: auto; }
-    .section-title { font-size: 24px; margin-bottom: 20px; color: #ff6600; }
-    footer { background: #000; color: white; text-align: center; padding: 20px; margin-top: 40px; }
-    .footer-links a { color: #fff; text-decoration: none; margin: 0 10px; }
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #fff;
+      color: #000;
+    }
+
+    header {
+      background-color: #ff6600;
+      color: white;
+      padding: 30px 20px;
+    }
+
+    .header-container {
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .header-texto h1 {
+      font-size: 32px;
+      margin: 0;
+    }
+
+    .header-texto p {
+      margin-top: 5px;
+      font-size: 16px;
+    }
+
+    nav {
+      background: #fff;
+      padding: 10px 0;
+      text-align: center;
+      border-bottom: 2px solid #ff6600;
+    }
+
+    nav a {
+      color: #ff6600;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 16px;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    section {
+      padding: 40px 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    section h2 {
+      color: #ff6600;
+      font-size: 26px;
+      margin-top: 30px;
+    }
+
+    section p, li {
+      font-size: 18px;
+      color: #333;
+      line-height: 1.7;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    footer {
+      background: #000;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+
+    .footer-links a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 10px;
+    }
   </style>
 </head>
 <body>
+
   <header>
-    <h1>Família Ótica</h1>
-    <p class="highlight">Cuidando da sua visão com carinho e confiança</p>
+    <div class="header-container">
+      <div class="header-texto">
+        <h1>Família Ótica</h1>
+        <p>Especialistas em visão e bem-estar visual</p>
+      </div>
+    </div>
   </header>
 
   <nav>
@@ -32,10 +112,54 @@
   </nav>
 
   <section>
-    <h2 class="section-title">Cuidados Visuais</h2>
-    <p>👁️ Manter os exames de vista em dia é fundamental para garantir uma boa saúde ocular e detectar problemas precocemente.</p>
-    <p>🕶️ Trocar os óculos periodicamente garante que você esteja sempre com a correção visual adequada ao seu momento atual.</p>
-    <p>🧴 Caso use lentes de contato, higienize corretamente, respeite o tempo de uso e realize sempre acompanhamento com oftalmologista.</p>
+    <h2>Importância de Cuidar da Sua Visão</h2>
+    <p>
+      Manter os exames oftalmológicos em dia é fundamental para identificar alterações na visão antes mesmo de surgirem sintomas. Muitas doenças oculares são silenciosas e só apresentam sinais em estágios avançados, como o glaucoma e a degeneração macular.
+    </p>
+    <p>
+      O recomendado é realizar exames completos pelo menos uma vez ao ano — ou com maior frequência caso haja histórico familiar de doenças oculares.
+    </p>
+
+    <h2>Cuidados com Seus Óculos</h2>
+    <ul>
+      <li>Limpe as lentes com pano de microfibra e solução específica.</li>
+      <li>Evite apoiar os óculos com as lentes para baixo.</li>
+      <li>Guarde sempre em estojo rígido para evitar riscos e quebras.</li>
+      <li>Evite deixar os óculos expostos ao sol ou calor intenso, como no painel do carro.</li>
+    </ul>
+
+    <h2>Cuidados com Lentes de Contato</h2>
+    <ul>
+      <li>Use sempre solução adequada para limpar e armazenar as lentes.</li>
+      <li>Nunca utilize soro fisiológico, saliva ou água para limpar as lentes.</li>
+      <li>Respeite o tempo de uso e troca indicado pelo fabricante.</li>
+      <li>Evite dormir com lentes (a menos que sejam apropriadas para isso).</li>
+      <li>Mantenha suas mãos limpas e secas ao manusear as lentes.</li>
+    </ul>
+
+    <h2>Passo a Passo: Como Colocar Lentes de Contato</h2>
+    <ol>
+      <li>Lave bem as mãos com sabão e seque com toalha limpa.</li>
+      <li>Coloque a lente na ponta do dedo indicador, com a parte côncava voltada para cima.</li>
+      <li>Com a outra mão, segure a pálpebra superior para evitar piscar.</li>
+      <li>Puxe suavemente a pálpebra inferior com o dedo médio da mão que segura a lente.</li>
+      <li>Olhe para cima e coloque a lente suavemente sobre a parte branca do olho.</li>
+      <li>Pisca devagar até a lente se ajustar ao centro da córnea.</li>
+      <li>Repita o processo com o outro olho.</li>
+    </ol>
+
+    <h2>Doenças Preveníveis com Acompanhamento Oftalmológico</h2>
+    <ul>
+      <li><strong>Glaucoma:</strong> aumento da pressão ocular que pode causar cegueira.</li>
+      <li><strong>Catarata:</strong> perda da transparência do cristalino, comum em idosos.</li>
+      <li><strong>Degeneração macular:</strong> afeta a visão central e a leitura.</li>
+      <li><strong>Miopia progressiva:</strong> comum em crianças e jovens; requer controle precoce.</li>
+    </ul>
+
+    <h2>Saúde Visual e Qualidade de Vida</h2>
+    <p>
+      Uma boa visão está diretamente ligada ao bem-estar, aprendizado, produtividade e segurança no dia a dia. Cuidar dos olhos é cuidar da sua qualidade de vida.
+    </p>
   </section>
 
   <footer>
@@ -46,5 +170,6 @@
     </div>
     <p>&copy; 2025 Família Ótica. Todos os direitos reservados.</p>
   </footer>
+
 </body>
 </html>
