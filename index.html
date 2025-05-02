@@ -86,38 +86,47 @@
       margin: 40px auto;
       position: relative;
       overflow: hidden;
-      border: 2px solid #ff6600;
       border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
       background: #fff;
     }
 
     .carousel-images {
       display: flex;
-      width: 600%;
-      animation: slide 18s infinite;
+      transition: transform 0.5s ease-in-out;
     }
 
     .carousel-images img {
-      width: 100%;
+      width: 700px;
       height: 300px;
       object-fit: contain;
       flex-shrink: 0;
       background: #fff;
     }
 
-    @keyframes slide {
-      0%    { transform: translateX(0%); }
-      16%   { transform: translateX(0%); }
-      17%   { transform: translateX(-100%); }
-      33%   { transform: translateX(-100%); }
-      34%   { transform: translateX(-200%); }
-      50%   { transform: translateX(-200%); }
-      51%   { transform: translateX(-300%); }
-      67%   { transform: translateX(-300%); }
-      68%   { transform: translateX(-400%); }
-      84%   { transform: translateX(-400%); }
-      85%   { transform: translateX(-500%); }
-      100%  { transform: translateX(-500%); }
+    .carousel-button {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background-color: rgba(255, 255, 255, 0.8);
+      border: none;
+      padding: 10px;
+      cursor: pointer;
+      border-radius: 50%;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    .carousel-button:hover {
+      background-color: #ff6600;
+      color: white;
+    }
+
+    .carousel-button.prev {
+      left: 10px;
+    }
+
+    .carousel-button.next {
+      right: 10px;
     }
 
     footer {
@@ -161,7 +170,7 @@
   </section>
 
   <section class="carousel-container">
-    <div class="carousel-images">
+    <div class="carousel-images" id="carouselImages">
       <img src="img/Imagem1.jpg" alt="Imagem 1" />
       <img src="img/Imagem2.jpg" alt="Imagem 2" />
       <img src="img/Imagem3.jpg" alt="Imagem 3" />
@@ -169,6 +178,8 @@
       <img src="img/Imagem5.jpg" alt="Imagem 5" />
       <img src="img/Imagem6.jpg" alt="Imagem 6" />
     </div>
+    <button class="carousel-button prev" onclick="prevSlide()">&#10094;</button>
+    <button class="carousel-button next" onclick="nextSlide()">&#10095;</button>
   </section>
 
   <footer>
@@ -179,6 +190,29 @@
     </div>
     <p>&copy; 2025 Família Ótica. Todos os direitos reservados.</p>
   </footer>
+
+  <script>
+    const images = document.getElementById('carouselImages');
+    const totalImages = images.children.length;
+    let currentIndex = 0;
+
+    function updateCarousel() {
+      images.style.transform = `translateX(-${currentIndex * 700}px)`;
+    }
+
+    function nextSlide() {
+      currentIndex = (currentIndex + 1) % totalImages;
+      updateCarousel();
+    }
+
+    function prevSlide() {
+      currentIndex = (currentIndex - 1 + totalImages) % totalImages;
+      updateCarousel();
+    }
+
+    // Carrossel automático a cada 5 segundos
+    setInterval(nextSlide, 5000);
+  </script>
 
 </body>
 </html>
