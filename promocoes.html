@@ -2,26 +2,107 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Promoções - Família Ótica</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
   <style>
-    body { font-family: 'Poppins', sans-serif; margin: 0; padding: 0; background-color: #fff; color: #000; }
-    header { background-color: #000; color: white; padding: 20px; text-align: center; }
-    nav { background: #ff6600; padding: 10px; text-align: center; }
-    nav a { color: white; margin: 0 15px; text-decoration: none; font-weight: 600; }
-    section { padding: 40px 20px; max-width: 1200px; margin: auto; }
-    .section-title { font-size: 24px; margin-bottom: 20px; color: #ff6600; }
-    .promo-img { width: 100%; max-width: 800px; margin: 20px auto; display: block; border: 2px solid #ff6600; border-radius: 10px; }
-    .promo-video { width: 100%; max-width: 800px; margin: 20px auto; display: block; border-radius: 10px; }
-    footer { background: #000; color: white; text-align: center; padding: 20px; margin-top: 40px; }
-    .footer-links a { color: #fff; text-decoration: none; margin: 0 10px; }
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #fff;
+      color: #000;
+    }
+
+    header {
+      background-color: #ff6600;
+      color: white;
+      padding: 30px 20px;
+    }
+
+    .header-container {
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .header-texto h1 {
+      font-size: 32px;
+      margin: 0;
+    }
+
+    .header-texto p {
+      margin-top: 5px;
+      font-size: 16px;
+      color: white;
+    }
+
+    nav {
+      background: #fff;
+      padding: 10px 0;
+      text-align: center;
+      border-bottom: 2px solid #ff6600;
+    }
+
+    nav a {
+      color: #ff6600;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 16px;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    section {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    section h2 {
+      color: #ff6600;
+      font-size: 26px;
+    }
+
+    .promo {
+      margin-top: 30px;
+      text-align: center;
+    }
+
+    .promo img, .promo video {
+      width: 100%;
+      max-width: 800px;
+      border-radius: 12px;
+      margin-bottom: 30px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    }
+
+    footer {
+      background: #000;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+
+    .footer-links a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 10px;
+    }
   </style>
 </head>
 <body>
+
   <header>
-    <h1>Família Ótica</h1>
-    <p class="highlight">Promoções imperdíveis para você enxergar com qualidade</p>
+    <div class="header-container">
+      <div class="header-texto">
+        <h1 style="color: white;">Família Ótica</h1>
+        <p style="color: white;">Especialistas em visão e bem-estar visual</p>
+      </div>
+    </div>
   </header>
 
   <nav>
@@ -34,87 +115,29 @@
   </nav>
 
   <section>
-    <h2 class="section-title">Confira nossas promoções</h2>
+    <h2>Ofertas e Promoções Especiais 🎉</h2>
+    <p>Aproveite nossas promoções por tempo limitado! Aqui você encontra os melhores preços em lentes, armações e pacotes completos com exames. Confira abaixo:</p>
 
-    <!-- Exemplo de imagem -->
-    <img src="imagens/promocao1.jpg" alt="Promoção 1" class="promo-img">
+    <div class="promo">
+      <img src="imagens/promocao1.jpg" alt="Promoção 1 - Armação + Lentes" />
+      <video controls>
+        <source src="videos/promo-video1.mp4" type="video/mp4">
+        Seu navegador não suporta vídeos HTML5.
+      </video>
+      <img src="imagens/promocao2.jpg" alt="Promoção 2 - Óculos Solar com desconto" />
+    </div>
 
-    <!-- Exemplo de vídeo -->
-    <video class="promo-video" controls>
-      <source src="videos/promo1.mp4" type="video/mp4">
-      Seu navegador não suporta vídeos.
-    </video>
-
-    <!-- Repita os blocos acima conforme desejar -->
+    <p style="text-align:center; margin-top: 20px; font-size: 18px;">Visite nossa loja e garanta já o seu novo visual com qualidade e economia! 💬</p>
   </section>
 
   <footer>
     <div class="footer-links">
       <a href="index.html">Início</a> |
       <a href="contato.html">Contato</a> |
-      <a href="promocoes.html">Promoções</a>
+      <a href="sobre.html">Sobre</a>
     </div>
     <p>&copy; 2025 Família Ótica. Todos os direitos reservados.</p>
   </footer>
-</body>
-</html>
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Promoções - Família Ótica</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
-  <style>
-    body { font-family: 'Poppins', sans-serif; margin: 0; padding: 0; background-color: #fff; color: #000; }
-    header { background-color: #000; color: white; padding: 20px; text-align: center; }
-    nav { background: #ff6600; padding: 10px; text-align: center; }
-    nav a { color: white; margin: 0 15px; text-decoration: none; font-weight: 600; }
-    section { padding: 40px 20px; max-width: 1200px; margin: auto; }
-    .section-title { font-size: 24px; margin-bottom: 20px; color: #ff6600; }
-    .promo-img { width: 100%; max-width: 800px; margin: 20px auto; display: block; border: 2px solid #ff6600; border-radius: 10px; }
-    .promo-video { width: 100%; max-width: 800px; margin: 20px auto; display: block; border-radius: 10px; }
-    footer { background: #000; color: white; text-align: center; padding: 20px; margin-top: 40px; }
-    .footer-links a { color: #fff; text-decoration: none; margin: 0 10px; }
-  </style>
-</head>
-<body>
-  <header>
-    <h1>Família Ótica</h1>
-    <p class="highlight">Promoções imperdíveis para você enxergar com qualidade</p>
-  </header>
 
-  <nav>
-    <a href="index.html">Início</a>
-    <a href="sobre.html">Sobre</a>
-    <a href="cuidados.html">Cuidados Visuais</a>
-    <a href="lentes.html">Lentes</a>
-    <a href="promocoes.html">Promoções</a>
-    <a href="contato.html">Contato</a>
-  </nav>
-
-  <section>
-    <h2 class="section-title">Confira nossas promoções</h2>
-
-    <!-- Exemplo de imagem -->
-    <img src="imagens/promocao1.jpg" alt="Promoção 1" class="promo-img">
-
-    <!-- Exemplo de vídeo -->
-    <video class="promo-video" controls>
-      <source src="videos/promo1.mp4" type="video/mp4">
-      Seu navegador não suporta vídeos.
-    </video>
-
-    <!-- Repita os blocos acima conforme desejar -->
-  </section>
-
-  <footer>
-    <div class="footer-links">
-      <a href="index.html">Início</a> |
-      <a href="contato.html">Contato</a> |
-      <a href="promocoes.html">Promoções</a>
-    </div>
-    <p>&copy; 2025 Família Ótica. Todos os direitos reservados.</p>
-  </footer>
 </body>
 </html>
